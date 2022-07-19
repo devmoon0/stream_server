@@ -1,0 +1,12 @@
+[Unit]
+Description=CCTV8 Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/test_cctv8/start_cctv8.sh
+Restart=on-abort
+WorkingDirectory=/opt/test_cctv8
+
+[Install]
+WantedBy=multi-user.target 
